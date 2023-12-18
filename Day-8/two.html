@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchoronos</title>
+</head>
+<body>
+    <h1>Hello Js</h1>
+    <button id="stop">stop</button>
+    <script>
+        // setTimeout(function(){
+        //     console.log("Nabin");
+        // },2000)
+
+        const changeText=function(){
+            document.querySelector('h1').innerText="Lets Change"
+        }
+
+        const changeMe= setTimeout(changeText,2000);
+        // clearTimeout(changeMe)
+        document.querySelector("#stop").addEventListener('click')
+    </script>
+</body>
+</html>

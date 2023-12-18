@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        let n=prompt("Enter a number: ");
+        let arr=[];
+
+        for(let i=1;i<=n;i++){
+            arr[i-1]=i;
+        }
+        let sumarr=arr.reduce((res,curr)=>{
+            return res+curr;
+        });
+        console.log(arr);
+        console.log(sumarr);
+        let factarr=arr.reduce((res,curr)=>{
+            return res*curr;
+        });
+        console.log(factarr);
+    </script>
+</body>
+</html>
